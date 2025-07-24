@@ -20,7 +20,6 @@ A collection of modern HTML and CSS UI components, including sliders, footers, a
 - `style.css` – Main stylesheet
 - `font-awesome/`, `font-awesome-4.7.0/` – Icon fonts
 - `img/` – Image assets
-
-<img width="1918" height="878" alt="image" src="https://github.com/user-attachments/assets/b6ba71c5-bd41-4f46-987c-50609455f669" />
-
 - Other `.html` files – Component demos 
+
+<img width="1919" height="876" alt="Screenshot 2025-07-24 173816" src="https://github.com/user-attachments/assets/cf36e25b-8ddc-4434-ba20-0f595e9124c4" />
