@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.checkslider{
+			width: 70%;
+			margin: auto;
+			overflow: hidden;
+			
+
+		}
+		.checkslider>.content{
+			width: 300%;
+			margin:70px 0;
+		}
+		.checkslider>.content>.check{
+			width: 	33.33%;
+			float: 	left;
+			text-align: center;	
+			position: 	relative;		
+		}
+		.checkslider>.content>.check>.text>h5{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+		.checkslider>.content>.check>.text>p{
+			margin: 40px 0;
+			font-size: 25px; 
+			color: grey;
+			text-align: center;
+		}
+		.dots{
+			width: 	100%;
+			display: flex;
+			justify-content: center;		
+		}
+
+		.checkslider>.dots>label{
+			width: 	20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 1px solid black;
+			margin: 0 10px;
+			cursor: pointer;
+			padding: 2px;
+			margin-bottom: 70px;
+		}
+		.checkslider>.dots>label:hover{
+			background: red;
+			background-clip: content-box;
+			
+		}
+		.checkslider>.content>input[type="radio"]{
+			display: 	none;	
+		}
+		#r1:checked ~ .check{
+			left: 	0;
+			transition: all .5s ease;
+
+		}
+		#r2:checked ~ .check{
+			left: 	-33.33%;
+			transition: all .5s ease;
+		}
+		#r3:checked ~ .check{
+			left: 	-66.66%;
+			transition: all .5s ease;
+		}
+	</style>
+</head>
+<body>
+<div class="checkslider">
+  <div class="content">
+  		 <input type="radio" name="r" id="r1" >
+		  <input type="radio" name="r" id="r2">
+          <input type="radio" name="r" id="r3">
+    <div class="check check1">
+	    <div class="img">
+		   <img src="img/testimonial-founder.png.webp">
+	      </div>
+	    <div class="text">
+		    <h5>Margaret Lawson</h5>
+		    <label>Creative Director</label>
+		    <p>"I am at an age where i just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you.Eat clean it will care for you and workout hard."</p>
+	   </div>
+    </div>
+
+     <div class="check check2">
+	    <div class="img">
+		   <img src="img/testimonial-founder.png.webp">
+	      </div>
+	    <div class="text">
+		    <h5>Margaret Lawson</h5>
+		    <label>Creative Director</label>
+		    <p>"I am at an age where i just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you.Eat clean it will care for you and workout hard."</p>
+	   </div>
+    </div>
+
+     <div class="check check3">
+	    <div class="img">
+		   <img src="img/testimonial-founder.png.webp">
+	      </div>-
+	    <div class="text">
+		    <h5>Margaret Lawson</h5>
+		    <label>Creative Director</label>
+		    <p>"I am at an age where i just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you.Eat clean it will care for you and workout hard."</p>
+	   </div>
+    </div>
+    </div>
+	      <div class="dots">
+          <label for="r1"></label>
+          <label for="r2"></label>
+           <label for="r3"></label>
+     </div>
+</div>
+</body>
+</html>
