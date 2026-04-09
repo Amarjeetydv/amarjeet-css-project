@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container1{
+			max-width: 100%
+			padding: 40px 190px;
+			margin: 0 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.container1>.column1>span{
+			color: red;
+		}
+		.container1>.column1>h3{
+			font-size: 50px;
+			font-weight: normal;
+			margin: 40px 0;
+		}
+		.container1>.column1>.p1,.p2{
+			padding-right: 40px;
+			line-height: 25px;
+		}
+		.container1>.column1>.p2{
+			color: grey;
+			margin:60px 0;
+		}
+		.container1>.column1>button{
+			width: 100px;
+			height: 30px;
+			text-align: center;
+			background-color: rgba(255,50,50,0.8);
+			font-weight: bold;
+			border: none;
+			color: white;
+
+		}
+	.container1>.column1>button{
+	width: 100px;
+	height: 50px;
+	border: 1px solid red;
+	color: white;
+	font-weight: bold;
+	position: relative;
+	background-color:rgba(245,20,20,.8);
+	z-index: 1;
+	border: none;	              
+}
+.container1>.column1>button:before{
+	content: '';
+	width: 0;
+	height: 100%;
+	background-color: rgba(245,20,20,.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.container1>.column1>button:hover:before{
+	width: 100%;
+	transition: width .5s ease;
+	z-index: -1;
+	background-color: red;
+	cursor: pointer;
+}
+
+		.container1>.column2{
+			background-image: url("img/support-img.jpg.webp");
+			width: 100%;
+			height: 800px;
+			box-sizing: border-box;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-end;	
+			margin: 50px 0;		
+		}
+		.container1>.column2>.since{
+			width: 200px;
+			padding: 90px 0;
+			color: white;
+			font-weight: bold;
+			background-color: darkblue;
+			font-size: 35px;
+			text-align: center;
+			position: relative;
+			left: -100px;
+			border-radius: 5px;
+
+		}
+		.container1>.column2>.since>h6{
+			font-size: 15px;
+
+		}
+		@media only screen and (max-width : 992px){
+			.container1{
+				flex-direction: column;	
+			
+			}
+			.container1>.column2>.since{
+				left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="container1">
+	<div class=" column column1">
+		<span>What we are doing</span>
+		<h3>25k Talented people are getting jobs</h3>
+		<p class="p1">Molit anim laborum duis au doalor in voluptate velit ess cillum dolore eu lore dsu quality molit anim laborumuis au dolor in voluptate velit cilum.</p>
+		<p class="p2">Molit anim laborum.Duis aut irufg dhjkolohr in re voluptate velit esscillulore eu quife nrulla parihatur.Excghcepteur signijnt occa cupidatat non inulpadeserunt molit abour.temnthp incididbnt ut jabore molitanim laborum suis aut.</p>
+		<button>Post A job</button>
+	</div>
+	<div class=" column column2">
+        <div class="since">
+        	<h6>Since</h6> 1994
+        </div>
+		
+	</div>
+</div>
+</body>
+</html>
